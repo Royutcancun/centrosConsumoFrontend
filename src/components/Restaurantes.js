@@ -60,12 +60,13 @@ export default function Restaurantes() {
                     Name:  {restaurante.nombre + " "} <br/>
                     Concepto:  {restaurante.concepto_es + " "} <br/>
                     Categoria:  {restaurante.categoria_id + " "}<br/>
+                    <p></p>
                     <div >
                     <Button id="btnVerMas" variant="outlined" elevation={8} style={{}} 
                             onClick={() => { alert(
                                 restaurante.nombre + '\n'+
-                                restaurante.concepto_es + '\n'+
-                                ' pulsado') }}>
+                                restaurante.concepto_es + '\n'
+                                ) }}>
                                 VER MÁS
                             </Button>
                     

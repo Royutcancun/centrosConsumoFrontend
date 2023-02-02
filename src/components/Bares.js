@@ -55,12 +55,24 @@ export default function Bares() {
         <Paper elevation={3} style={paperStyle}>
             {restaurantes.map(restaurante => (
 
-                <Paper elevation={6} style={{margin:"10px", padding:"15px", textAlign:"left", 
-                                            background:"#282c34", color:"white" }} key={restaurante.id} >
-                    Name:  {restaurante.nombre + " "} <br/>
-                    Concepto:  {restaurante.concepto_es + " "} <br/>
-                    Categoria:  {restaurante.categoria_id + " "}
-                </Paper>
+            <Paper elevation={6} style={{margin:"10px", padding:"15px", textAlign:"left", 
+            background:"#282c34", color:"white"}} key={restaurante.id} >
+            Name:  {restaurante.nombre + " "} <br/>
+            Concepto:  {restaurante.concepto_es + " "} <br/>
+            Categoria:  {restaurante.categoria_id + " "}<br/>
+            <p></p>
+            <div >
+            <Button id="btnVerMas" variant="outlined" elevation={8} style={{}} 
+                    onClick={() => { alert(
+                        restaurante.nombre + '\n'+
+                        restaurante.concepto_es + '\n'
+                       ) }}>
+                        VER MÁS
+                    </Button>
+
+</div>
+
+</Paper>
             )
             )}
         </Paper>
