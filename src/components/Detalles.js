@@ -18,7 +18,7 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { Restaurant } from '@material-ui/icons';
 import Restaurantes from '../components/Restaurantes';
 
-//const restaurantes = Restaurantes;
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -73,7 +73,7 @@ export default function Detalles() {
         
           <CardHeader
               title={restaurante.nombre}
-              subheader="September 14, 2016" />
+              subheader="February 2, 2023" />
           <CardMedia
               className={classes.media}
               image={imgApi+restaurante.img_portada}
